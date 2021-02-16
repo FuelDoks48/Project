@@ -82,11 +82,31 @@
 # motocycles = ["reline", "Stels", "ns bike", "darkmoor",]
 # print(motocycles)
 
-# popped_motocycles = motocycles.pop(0)
+# popped_motocycles = motocycles.pop()
 # print(motocycles)
 # print(popped_motocycles)
 
-Удаление элемента списка с индексацией,но с ним ещё возможно работать!
+# Удаление элемента списка с индексацией,но с ним ещё возможно работать!
+# Последний удаленный элемент, храниться теперь в переменной popped_motocycles
 
+# ________________________________________________________________________________________________________________________________
+
+# motocycles = ["reline", "Stels", "ns bike", "darkmoor",]
+
+# last_owned = motocycles.pop()
+# print("The last motorcycle I owned was a " + last_owned.title() + '.')
+
+# Метод pop() позволяет вызвать последнее значение в списке.
+
+# ________________________________________________________________________________________________________________________________
+
+# motocycles = ["reline", "Stels", "ns bike", "darkmoor",]
+
+# last_owned = 'Stels'
+# motocycles.remove(last_owned)
+# print(motocycles)
+# print("\n This " + last_owned.title() + " bike is very fragile")
+
+# Удаление из списка с помощью метода remove,по поиску слова через присваивание переменной!
 
 # ________________________________________________________________________________________________________________________________
