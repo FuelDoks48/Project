@@ -1,0 +1,19 @@
+img{
+    max-width: 500px;
+}
+figure figcaption{
+    text-align: left;
+}
+.container{
+    width: 1170px;
+    padding-left: 40px;
+}
+table {
+    border: 2px solid;
+    width: 400px;
+    border-collapse: collapse;
+    border-color: black;
+}
+tr th,td {
+    border: 2px solid;
+}

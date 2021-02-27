@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Отправка заявки на&nbsp;конференцию</h1>
+        <h2>Основные данные </h2>
+
+        <form method="POST">
+            <p><b>* Фамилия, имя, отчество:</b></p>
+            <input required="required" type="text" placeholder="" size="50">
+            <p><b>* Дата рождения:</b></p>
+            <input required="required" type="text" placeholder="дд.мм.гггг" size="20">
+            <p><b>* Пол:</b></p>
+            <input required="required" type="radio" name="choice">Мужской
+            <input required="required" type="radio" name="choice">Женский
+            <p><b>* Адрес электронной почты:</b></p>
+            <input required="required" type="email" size="50">
+            <p><b>* Пароль для создания личного кабинета:</b></p>
+            <input required="required" type="password" size="50">
+            <p><b>* Подтверждение пароля:</b></p>
+            <input required="required" type="password" size="50">
+            <h2>Материалы для конференции</h2>
+            <p><b>* Тема доклада:</b></p>
+            <input required="required" type="text" size="50">
+            <p><b>* Тезисы доклада (не&nbsp;более1000&nbsp;символов):</b></p>
+            <textarea required="required" name="tesis" cols="41" rows="15"></textarea>
+            <p><b>* Файл презентации:</b></p>
+            <input required="required" type="file" name="file">
+            <br>
+            <h2>Дополнительные опции</h2>
+            <input type="checkbox" name="option_1" value="1">Проживание в&nbsp;отеле<br>
+            <input type="checkbox" name="option_2" value="2">Завтрак <br>
+            <input type="checkbox" name="option_3" value="3">Обед <br>
+            <input type="checkbox" name="option_4" value="4">Ужин <br>
+            <hr>
+            <input type="submit" value="Отправить">
+            <hr>
+            <p>* Поля, отмеченные звездочкой, являются обязательными для заполнения.</p>
+        </form>
+    </div>
+</body>
+
+</html>

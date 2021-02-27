@@ -1,0 +1,45 @@
+body {
+    background-color: #f5f5f5;   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+strong{
+    font-weight: bold;
+}
+em{
+    font-style: italic;
+}
+blockquote{
+    text-align: left;
+    text-transform: capitalize;           
+}
+a{
+    text-decoration: none;
+}
+p{
+    text-indent: 30px;
+    white-space: wrap;
+    word-spacing: unset;
+    opacity: 0.33;
+}
+img{
+    visibility: hidden;
+}
+.main-title{
+        color:black; 
+        font-size: 30px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        
+    }
+.background-samurai{
+    background-image: url(/test/img/depositphotos_45773111-stock-photo-samurai-pose.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+p strong{
+    color: brown;
+}
