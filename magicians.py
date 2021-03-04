@@ -18,4 +18,11 @@
 # print('Thanks you, everyone. That was a magic Show!')
 # ________________________________________________________________________
 
+# pizza = ['pepperoni', 'hawaii', 'chesse']
+
+# for pizzas in pizza:
+#     print('I like ', pizzas.title(), 'pizza' + '\n')
+# print('I really like pizza')
+# ________________________________________________________________________
+
 
