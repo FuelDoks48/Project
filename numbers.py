@@ -1,87 +1,30 @@
-# for value in range(5):
-#     print(value)
-
-
-# rm_list = [1, 4, 6, 2, 5, 7, 2]
-
-# def merge_sort(rm_list):
-#     if len(rm_list) <= 1:
-#         return rm_list
-#     middle = len(rm_list) / 2
-
-array = [33, 42, 9, 37, 8, 47, 5, 29]
-
-
-def merge_sort(array,left_index,right_index):
-    if left_index > right_index:
-        return
-
-# # Делим подмассивы пополам и сортируем их рекурсивно, пока не получим подмассивы, которые имеют только один элемент
-#     middle = (left_index + right_index) // 2
-#     merge_sort(array, left_index, middle)
-#     merge_sort(array, middle + 1, right_index)
-#     merge(array, left_index, right_index, middle)
-
-# def merge(array, left_index, right_index, middle):
-# # копии двух массивов
-#     left_copy = array[left_index:middle + 1]
-#     right_copy = array[middle:right_index + 1]
-
-#     # начальные значения переменных,используемых для хранения
-#     left_copy_index = 0
-#     right_copy_index = 0
-#     # Курсор где мы находимся в массиве
-#     sorted_index = left_index
-
-#     # Прохождение обоих копий, пока у нас не закончились элементы
-#     while left_copy_index < len(left_copy) and right_copy_index < len(right_copy):
-
-#         if left_copy[left_copy_index] < right_copy[right_copy_index]:
-#             array[sorted_index] = left_copy[left_copy_index]
-#             left_copy_index = left_copy_index + 1
-#         else:
-#             array[sorted_index] = right_copy[right_copy_index]
-#             right_copy_index = right_copy_index + 1
-
-#         sorted_index = sorted_index + 1
-
-#         while left_copy_index < len(left_copy):
-#             array[sorted_index] = left_copy[left_copy_index]
-#             left_copy_index = left_copy_index + 1
-#             sorted_index = sorted_index + 1
-
-#         while right_copy_index < len(right_copy):
-#             array[sorted_index] = right_copy[right_copy_index]
-#             right_copy_index = right_copy_index + 1
-#             sorted_index = sorted_index + 1
-
-# merge_sort(array, 0, len(array) -1)
-# print(array)
+for value in range(5):
+    print(value)
 
 def merge(left_list, right_list):
     sorted_list = []
     left_list_index = right_list_index = 0
 
-    # Длинна списков часто использкется,создаём переменные
+#     # Длинна списков часто использкется,создаём переменные
     left_list_length, right_list_length = len(left_list), len(right_list)
 
 
     for x in range(left_list_length + right_list_length):
         if left_list_index < left_list_length and right_list_index < right_list_length:
-            # Сравниваем первые элементы в начале каждого списка 
-            # Если первый элемент левого подсписка меньше,добавляем его в отсортированный массив 
+#             # Сравниваем первые элементы в начале каждого списка 
+#             # Если первый элемент левого подсписка меньше,добавляем его в отсортированный массив 
             if left_list[left_list_index] <= right_list[right_list_index]:
                 sorted_list.append(left_list[left_list_index])
                 left_list_index += 1
-            # Если первый элемент правого подсписка меньше, добавляем его в отсортированный массив
+#             # Если первый элемент правого подсписка меньше, добавляем его в отсортированный массив
             else: 
                 sorted_list.append(right_list[right_list_index])
                 right_list_index += 1
-        # Если достигнут конец левого списка, элементы правого списка добавляем в конец результирующего списка
+#         # Если достигнут конец левого списка, элементы правого списка добавляем в конец результирующего списка
         elif left_list_index == left_list_length:
             sorted_list.append(right_list[right_list_index])
             right_list_index += 1
-        # Если достигнут конец правого списка, элементы левого списка добавляем в отсортированный массив
+#         # Если достигнут конец правого списка, элементы левого списка добавляем в отсортированный массив
         elif right_list_index == right_list_length:
             sorted_list.append(left_list[left_list_index])
             left_list_index += 1
@@ -89,19 +32,69 @@ def merge(left_list, right_list):
     return sorted_list
 
 def merge_sort(nums):
-    # ВОзвращаем список если он состоит из одного элемента 
+#     # ВОзвращаем список если он состоит из одного элемента 
     if len(nums) <= 1:
         return nums
-    # Для того что бы найти середину списка,используем деление без остатка
-    # Индексы должны быть integer 
+#     # Для того что бы найти середину списка,используем деление без остатка
+#     # Индексы должны быть integer 
     mid = len(nums) // 2
-    # Сортируем и обьеденяем подсписки
+#     # Сортируем и обьеденяем подсписки
     left_list = merge_sort(nums[:mid])
     right_list = merge_sort(nums[mid:])
-    # Обьеденяем отсортированные списки в результирующий 
+#     # Обьеденяем отсортированные списки в результирующий 
     return merge(right_list, left_list)
 
-# Проверка кода.
+# # Проверка кода.
 random_list_num = [120, 45, 68, 250, 176]
 random_list_num = merge_sort(random_list_num)
 print(random_list_num)
+
+# ___________________________________________________________________________________
+
+# Стандартная сортировка
+
+st_sort = [1, 2, 3, 2, 3, 5, 1, 2]
+st_sort = sorted(st_sort)
+print(st_sort)
+# ___________________________________________________________________________________
+
+# Сортируем кортеж(неизменяемый список  tuple)
+
+tuple_list = ('zane', 'bob', 'fred')
+tuple_list = sorted(tuple_list)
+print(tuple_list)
+# ___________________________________________________________________________________
+# Сортировка словаря
+
+vocab = {1:'a', 8:'b', 7:'t', 6:'z'}
+vocab = sorted(vocab)
+print(vocab)
+# ___________________________________________________________________________________
+# 
+# Сортировка сложных структур с использованием ключа
+
+class Person(object):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+#   Функция __repr__ является специальной функцией,которая используется для переопределения того,как объект будет представлен в интерпретаторе
+    # def __repr__(self):
+        # return str(self.age)
+    def __repr__(self):
+        return self.name
+jack = Person('Jack', 19)
+adam = Person('Adam',23)
+becky = Person('Becky', 22)
+# Сделаем переменную которая отправит все три переменные в список.
+people = [jack, adam, becky]
+
+
+# Функция отвечающая по какому параметру будет произведена сортировка
+def byName_key(Person):
+    return Person.name
+# def byName_key_2(Person):
+#     return Person.name
+a = sorted(people, key=byName_key)
+# b = sorted(people, key=byName_key_2)
+print(a)
+   
