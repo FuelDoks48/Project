@@ -42,6 +42,16 @@
 #     print('Your admission cost is 18$')
 # else:
 #     print('Your admission cost is 25$')
+# __________________________________________________________
 
-
-
+# 
+# number = int(input('enter your number:'))
+# isPrime = True
+# for divider in range(2, nubmer):
+#     if number % divider == 0:
+#         isPrime = False
+#         break
+# if isPrime:
+#     print('Prime Number')
+# else:
+#     print('Composite Prime')
