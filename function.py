@@ -26,7 +26,7 @@
 #     print(f"One of my favorite books is {title.title()}")
 # favorite_book("Alice in Wonderland")
 # ________________________________________________________________________
-"""Function of position"""
+"""Function of argument position"""
 
 
 # def describe_pet(animal_type, pet_name):
@@ -38,7 +38,7 @@
 
 
 
-"""Multipule function of position"""
+"""Multipule argument of position"""
 
 
 # def describe_pet(animal_type, pet_name):
@@ -48,3 +48,18 @@
 # describe_pet("hamster", "Meet")
 
 # ________________________________________________________________________
+
+"""Named argument"""
+
+# def describe_pet(animal_type, pet_name):
+#     print(f"\nI have a {animal_type}")
+#     print(f"\nMy {animal_type}'s name is {pet_name.title()}.")
+# describe_pet(animal_type = 'Snake', pet_name = 'Python')
+# ________________________________________________________________________
+
+"""default values"""
+
+# def describe_pet(pet_name, animal_type='Snake'):
+#     print(f"\nI have a {animal_type}")
+#     print(f"\nMy {animal_type}'s, name is {pet_name.title()}.")
+# describe_pet(pet_name = 'Python')
