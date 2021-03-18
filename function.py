@@ -93,4 +93,31 @@
 
 # ________________________________________________________________________
 
+"""Non-binding """
+
+# def get_formatted_name(first_name, last_name, middle_name=''):
+#     if middle_name:
+#         full_name = f"{first_name} {last_name} {middle_name}"
+#     else:
+#         full_name = f"{first_name} {last_name}"
+#     return full_name.title()
+# musicians = get_formatted_name('john', 'lee', 'hooker')
+# print(musicians)
+
+# musicians = get_formatted_name('jimi', 'hendrix')
+# print(musicians)
+
+
+# ________________________________________________________________________
+
+"""dictionary return"""
+
+# def build_person (first_name, last_name):
+#     person = {'first': first_name, 'last': last_name}
+#     return person
+
+# musicians = build_person('jimi', 'hendrix')
+# print(musicians)
+
+# ________________________________________________________________________
 
