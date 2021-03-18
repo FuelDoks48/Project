@@ -142,3 +142,29 @@
 # print(nation)
 # ________________________________________________________________________
 
+"""function album"""
+
+# def make_album(name_album, name_artist, collection_track=None):
+#     full_name = {'album': name_album, 'artist': name_artist}
+#     if collection_track:
+#         full_name['collection track'] = collection_track
+#     return full_name
+# album = make_album('Rosehrot', 'Rummstain', '27')
+# print(album)
+
+# album = make_album('Slipknot', 'Slipknot', '16')
+# print(album)
+
+# album = make_album('System of a down', 'System of a down', '7')
+# print(album)
+
+# ________________________________________________________________________
+
+
+"""function input album of user"""
+
+def make_album(name_album, name_artist, collection_track=None):
+    full_name = {'album': name_album, 'artist': name_artist}
+    if collection_track:
+        full_name['collection track'] = collection_track
+    return full_name

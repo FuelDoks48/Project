@@ -38,3 +38,28 @@
 
 # _____________________________________________________________________________________________________
 
+"""while function of dictionary album and Artist"""
+
+# def make_album(name_album, name_artist, collection_track=None):
+#     full_name = {'album': name_album, 'artist': name_artist}
+#     if collection_track:
+#         full_name['collection track'] = collection_track
+#     return full_name
+
+# while True:
+#     print("\nPlease print your favorite albums and artist of him: ")
+#     print("If you dont want print, and if you want quit print 'q' ")
+
+#     n_albums = input('Name Album: ')
+#     if n_albums == 'q':
+#         print('Goodbye')
+#         break
+#     n_artist = input('Artist Name: ')
+#     if n_artist == 'q':
+#         print('Goodbye')
+#         break
+#     formatted_name = make_album(n_albums, n_artist)
+#     print(formatted_name)
+# _____________________________________________________________________________________________________
+
+
