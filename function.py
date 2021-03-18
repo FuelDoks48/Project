@@ -132,3 +132,13 @@
 # musicians = build_person('jimi', 'hendrix', age=27)
 # print(musicians)
 # ________________________________________________________________________
+"""function country"""
+
+# def city_country(name_city, name_country):
+#     full_name = f"{name_city} {name_country}"
+#     return full_name.title()
+
+# nation = city_country('Moscow', 'Russia')
+# print(nation)
+# ________________________________________________________________________
+
