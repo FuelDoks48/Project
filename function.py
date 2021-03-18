@@ -121,3 +121,14 @@
 
 # ________________________________________________________________________
 
+"""expansion of function"""
+
+
+# def build_person(first_name, last_name, age=None):
+#     person = {'first': first_name, 'last': last_name}
+#     if age:
+#         person['age'] = age
+#     return person
+# musicians = build_person('jimi', 'hendrix', age=27)
+# print(musicians)
+# ________________________________________________________________________
