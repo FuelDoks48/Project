@@ -63,3 +63,34 @@
 #     print(f"\nI have a {animal_type}")
 #     print(f"\nMy {animal_type}'s, name is {pet_name.title()}.")
 # describe_pet(pet_name = 'Python')
+
+# ________________________________________________________________________
+
+"""exercise in function""" 
+
+# def make_shirts(size, text_make):
+#     print(f"\nMake has size: {size} ")
+#     print(f"And text on it '{text_make}'")
+# make_shirts('M', 'Slipknot')
+# ________________________________________________________________________
+
+"""Big make Shirts"""
+
+# def make_shirts(size = 'L', text_make = 'I love Python'):
+#     print(f"\nMake has size: {size} ")
+#     print(f"And text on it '{text_make}'")
+# make_shirts()
+# ________________________________________________________________________
+
+"""coming back to simple meaning""" 
+
+# def get_formatted_name(first_name, last_name):
+#     full_name = f"{first_name} {last_name}"
+#     return full_name.title()
+
+# musicians = get_formatted_name('jimi', 'hendrix')
+# print(musicians)
+
+# ________________________________________________________________________
+
+
