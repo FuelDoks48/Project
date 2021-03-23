@@ -222,3 +222,61 @@
 
 # print_models(unprinted_designs, completed_models)
 # show_comleted_models(completed_models)
+
+# ________________________________________________________________________
+
+# writing massage's
+
+
+# def print_massage(unprint_massage, current_massage):
+#     while unprint_massage:
+#          current_massage = unprint_massage.pop()
+#          print(f'I print your massage: {current_massage}')
+#          printing_massage.append(current_massage)
+
+# def show_printing_massage(printing_massage):
+#     print('\n The following massage have been complete print: ')
+#     for printing_massage in printing_massage:
+#         print(printing_massage)
+# unprint_massage = ['Hello world', 'In your eyes', 'I love my marshmallow', 'you want buy flowers', 'star wars films now is so bad']
+# printing_massage = [] 
+
+
+# print_massage(unprint_massage, printing_massage)
+# show_printing_massage(printing_massage)
+
+# ________________________________________________________________________
+
+# Перенос списка из одного в другой
+# Transfer list
+
+
+# def print_massage(unprint_massage, current_massage):
+#     while unprint_massage:
+#          current_massage = unprint_massage.pop()
+#          print(f'I print your massage: {current_massage}')
+#          printing_massage.append(current_massage)
+
+# def show_printing_massage(printing_massage):
+#     print('\n The following massage have been complete print: ')
+#     for printing_massage in printing_massage:
+#         print(printing_massage)
+
+
+# def append_massage(another_list):
+#     while printing_massage:
+#         another_list = printing_massage.pop()
+#         print(f'I pence your massage to another list: {another_list}')
+#         sent_massage.append(another_list)
+
+
+
+
+
+# unprint_massage = ['Hello world', 'In your eyes', 'I love my marshmallow', 'you want buy flowers', 'star wars films now is so bad']
+# printing_massage = [] 
+# sent_massage = []
+
+# print_massage(unprint_massage, printing_massage)
+# show_printing_massage(printing_massage)
+# append_massage(sent_massage)
