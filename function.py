@@ -163,8 +163,62 @@
 
 """function input album of user"""
 
-def make_album(name_album, name_artist, collection_track=None):
-    full_name = {'album': name_album, 'artist': name_artist}
-    if collection_track:
-        full_name['collection track'] = collection_track
-    return full_name
+# def make_album(name_album, name_artist, collection_track=None):
+#     full_name = {'album': name_album, 'artist': name_artist}
+#     if collection_track:
+#         full_name['collection track'] = collection_track
+#     return full_name
+# ________________________________________________________________________
+
+# List transfer
+
+
+# def greet_users(names):
+#     for name in names:                                 #выводит для каждего пользователя в списке сообщение
+#         massage = f"Hello, {name.title()}!"   
+#         print(massage)
+# username = ['hannah', 'elizabeth', 'Gendalf']
+# greet_users(username)
+
+# ________________________________________________________________________
+
+
+# without function
+
+
+# unprinted_designs = ['phone case', 'robot pendant', 'demon cyber']
+# completed_models = []
+
+# while unprinted_designs:
+#     current_designs = unprinted_designs.pop()
+#     print(f'Printing model: {current_designs}')
+#     completed_models.append(current_designs)
+
+# print("\nThe following models have been printed: ") 
+# for completed_models in completed_models:
+#     print(completed_models)
+
+# ________________________________________________________________________
+
+
+# 3-D printing with use function 
+
+# def print_models(unprinted_designs, current_design):
+#     # Имитирует печать моделей,каждая модель перемещается в completed_models
+#     while unprinted_designs:
+#         current_designs = unprinted_designs.pop()
+#         print(f'Printing model: {current_design}')
+#         completed_models.append(current_designs)
+
+
+# def show_comleted_models(completed_models):
+#     # Выводит информацию обо всех начатых моделях
+#     print('\n The following models have been printed: ') 
+#     for completed_models in completed_models:
+#         print(completed_models)
+
+# unprinted_designs = ['phone', 'robot', 'spider-man']
+# completed_models = []
+
+# print_models(unprinted_designs, completed_models)
+# show_comleted_models(completed_models)
