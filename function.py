@@ -280,3 +280,79 @@
 # print_massage(unprint_massage, printing_massage)
 # show_printing_massage(printing_massage)
 # append_massage(sent_massage)
+
+
+
+
+# ________________________________________________________________________
+
+
+#Copy list without changes
+
+
+
+
+# def print_massage(unprint_massage, current_massage):
+#     while unprint_massage:
+#          current_massage = unprint_massage.pop()
+#          print(f'I print your massage: {current_massage}')
+#          printing_massage.append(current_massage)
+
+# def show_printing_massage(printing_massage):
+#     print('\n The following massage have been complete print: ')
+#     for printing_massage in printing_massage:
+#         print(printing_massage)
+
+
+# def append_massage(another_list):
+#     while printing_massage:
+#         another_list = printing_massage.pop()
+#         print(f'I pence your massage to another list: {another_list}')
+#         sent_massage.append(another_list)
+
+
+
+
+
+# unprint_massage = ['Hello world', 'In your eyes', 'I love my marshmallow', 'you want buy flowers', 'star wars films now is so bad']
+# printing_massage = [] 
+# sent_massage = []
+
+# print_massage(unprint_massage[:], printing_massage)
+# show_printing_massage(printing_massage)
+# append_massage(sent_massage)
+
+# print(unprint_massage)
+
+# ________________________________________________________________________
+# tuple
+
+# def make_pizza(*toppings):
+#     print(toppings)
+
+# make_pizza('green pepper') 
+
+# ________________________________________________________________________
+
+# Arbitrary argument set
+# 
+# def make_pizza(*toppings):
+#     print('Making a pizza with the following toppings: ')
+#     for topping in toppings:
+#         print(f"- {topping}")
+
+# make_pizza('green pepper', "mushrooms")
+# make_pizza('green pepper', "mushrooms", 'salt', 'oyster')
+
+# ________________________________________________________________________
+
+# Size pizza with arbitrary argument set
+
+# def make_pizza(size, *toppings):
+# 	print(f'\nMaking a {size}-inch  pizza with the following toppins')
+# 	for topping in toppings:
+# 	    print(f'- {topping}')
+
+
+# make_pizza( 16, 'green pepper', "mushrooms")
+# make_pizza(12, 'green pepper', "mushrooms", 'salt', 'oyster')
