@@ -1,7 +1,8 @@
 import printing_function as pf
 
-pf.unprinted_designs = ["ass", 'dasd', 'asdsd', 'dsad']
-pf.completed_models = []
+unprinted_designs = ["ass", 'dasd', 'asdsd', 'dsad']
+completed_models = []
 
-pf.print_models(pf.unprinted_designs, pf.completed_models)
-pf.show_comleted_models(pf.completed_models)
+
+pf.print_models(unprinted_designs, completed_models)
+pf.show_comleted_models(completed_models)
