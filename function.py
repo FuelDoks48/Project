@@ -356,3 +356,17 @@
 
 # make_pizza( 16, 'green pepper', "mushrooms")
 # make_pizza(12, 'green pepper', "mushrooms", 'salt', 'oyster')
+
+# ________________________________________________________________________
+
+# Using arbitrary arguments in dictionary
+
+# def build_profile(first, last, **user_info):
+#     user_info['first_name'] = first
+#     user_info['last_name'] = last
+#     return user_info
+
+# user_profile = build_profile('albert', 'enshtein', location='prinston', filed='physics')
+# print(user_profile)
+
+# ________________________________________________________________________
